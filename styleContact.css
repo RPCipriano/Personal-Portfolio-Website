@@ -1,0 +1,141 @@
+/* Universal Styles*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condesated", sans-serif;
+    font-size: 16px;
+    background-color: #e8eff4;
+    margin: 0;
+    padding: 0;
+
+}
+
+h2{
+    font-family: "Montserrat", serif;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+
+/* -- HEADER -- */
+header {
+    position: sticky;
+    border-bottom: 1px solid #324e66;
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+    height: 100px;
+    background-color: #324e66;
+    color: #f7f4f3;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 10px; 
+}
+
+.name-logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    border: 0.5px solid #f7f4f3;
+    padding: auto 5px;
+
+}
+
+.search li{
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-right: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #f7f4f3;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: #f7f4f3;
+    color: #324e66;
+}
+
+/* -- Main -- */
+
+main{
+    position: relative;
+    background: url(./resources/mj_11226_4.jpg) center center no-repeat;
+    background-size:cover;
+    z-index: -1;
+}
+
+main:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9db6c9;
+    opacity: 95%;
+}
+
+main * {
+    position: relative; /* Makes elements display above overlay*/
+}
+
+.content{
+    text-align: left;
+    margin: auto 10%
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p{
+    width: 75%;
+    margin-top: 10px;
+    padding-right: 25%;
+    float: left;
+}
+
+#about img{
+    max-width: 25%;
+    max-height: auto;
+    float: right;
+    margin: 0;
+}
+
+#projects {
+    display: flex;
+}
+
+.num-projects {
+    list-style:none;
+}
+
+.num-projects li{
+    font-size: 1.5em;
+}
+
+/* -- FOOTER --  */
+
+footer {
+    position: relative;
+    height: 50px;
+    background-color: #324e66;
+    color: #f7f4f3;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
